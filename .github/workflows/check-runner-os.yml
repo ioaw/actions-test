@@ -9,7 +9,7 @@ on:
 jobs:
   check-runner-os:
 
-    runs-on: ubuntu-16.04
+    runs-on: windows-latest
 
     steps:
       - name: os check
