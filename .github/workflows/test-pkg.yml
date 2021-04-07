@@ -9,7 +9,7 @@ on:
 jobs:
   test-pkg:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-16.04
 
     steps:
       - name: Use Node.js
@@ -20,4 +20,4 @@ jobs:
       - name: Test command -> pkg
         run: |
           pkg -v
-        shell: bash
+#         shell: bash
