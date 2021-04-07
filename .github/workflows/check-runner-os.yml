@@ -9,7 +9,7 @@ on:
 jobs:
   check-runner-os:
 
-    runs-on: ubuntu-16.04
+    runs-on: windows-latest
 
     steps:
       - name: os check
@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "Need to install zip!"
         shell: bash
-      - name: step 2
+      - name: check curl version
         run: |
-          echo "Reach step 2!"
+          curl --version
         shell: bash
