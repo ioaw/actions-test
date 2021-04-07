@@ -9,10 +9,15 @@ on:
 jobs:
   check-runner-os:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-16.04
 
     steps:
       - name: os check
         if: ${{ runner.os == 'Windows' }}
         run: |
           echo "Need to install zip!"
+        shell: bash
+      - name: step 2
+        run: |
+          echo "Reach step 2!"
+        shell: bash
