@@ -1,0 +1,18 @@
+# Test
+
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  check-runner-os:
+
+    runs-on: ubuntu-16.04
+
+    steps:
+      - name: os check
+        if: ${{ runner.os == 'ubuntu-16.04' }}
+        run: |
+          echo "ok"
