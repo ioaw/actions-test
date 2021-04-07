@@ -13,6 +13,6 @@ jobs:
 
     steps:
       - name: os check
-        if: ${{ runner.os == 'ubuntu-16.04' }}
+        if: ${{ runner.os == 'Windows' }}
         run: |
-          echo "ok"
+          echo "Need to install zip!"
