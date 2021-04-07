@@ -9,15 +9,15 @@ on:
 jobs:
   test-zip-command:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-16.04
 
     steps:
-      - name: Install "zip"
-        run: |
-          choco install zip
-        shell: bash
+#       - name: Install "zip"
+#         run: |
+#           choco install zip
+#         shell: bash
 
       - name: Test command -> zip
         run: |
           zip --help
-        shell: bash
+#         shell: bash
