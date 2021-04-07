@@ -9,7 +9,7 @@ on:
 jobs:
   test-zip-command:
 
-    runs-on: ubuntu-16.04
+    runs-on: windows-latest
 
     steps:
 #       - name: Install "zip"
@@ -20,4 +20,4 @@ jobs:
       - name: Test command -> zip
         run: |
           zip --help
-#         shell: bash
+        shell: bash
