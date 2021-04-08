@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test-jobs.<job_id>.env:
+  test-jobs-job_id-env:
 
     runs-on: windows-latest
 
