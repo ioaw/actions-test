@@ -1,0 +1,25 @@
+# Test
+
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test-jobs.<job_id>.env:
+
+    runs-on: windows-latest
+
+    env:
+      NAME: mona
+
+    steps:
+      - name: check env 1
+        run: |
+          echo $NAME
+        shell: bash
+      - name: check env 2
+        run: |
+          echo $NAME
+        shell: bash
