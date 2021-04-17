@@ -7,19 +7,19 @@ on:
     branches: [ main ]
 
 jobs:
-  test-jobs-job_id-env:
+  test-node-range:
 
     runs-on: windows-latest
 
     env:
-      NAME: mona
+      NODE_RANGE: node14
 
     steps:
       - name: check env 1
         run: |
-          echo $NAME
+          echo $NODE_RANGE
         shell: bash
       - name: check env 2
         run: |
-          echo ${{ env.NAME }}
+          echo ${{ env.NODE_RANGE }}
         shell: bash
