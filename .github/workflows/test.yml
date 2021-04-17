@@ -12,16 +12,16 @@ jobs:
     runs-on: windows-latest
 
     env:
-      NODE_RANGE: node14
+      NODE_RANGE: 14
       PLATFORM: linux
       ARCH: x64
 
     steps:
       - name: check env 1
         run: |
-          echo $NODE_RANGE-$PLATFORM-$ARCH
+          echo node$NODE_RANGE-$PLATFORM-$ARCH
         shell: bash
       - name: check env 2
         run: |
-          echo ${{ env.NODE_RANGE }}-${{ env.PLATFORM }}-${{ env.ARCH }}
+          echo node${{ env.NODE_RANGE }}-${{ env.PLATFORM }}-${{ env.ARCH }}
         shell: bash
