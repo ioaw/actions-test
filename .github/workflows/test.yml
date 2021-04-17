@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      NODE_RANGE: node14
+      NODE_RANGE: 14
 
     steps:
       - name: check env 1
